@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7fa;
+}
+#root {
+  min-height: 100vh;
+}
+.tab-bar {
+  display: flex;
+  background: #2a4365;
+  color: white;
+  padding: 0.5em 1em;
+}
+.tab-bar button {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1em;
+}
+.tab-bar .active {
+  border-bottom: 2px solid #ecc94b;
+  font-weight: bold;
+}
+.container {
+  max-width: 1100px;
+  margin: 2em auto;
+  background: white;
+  box-shadow: 0 2px 8px #0001;
+  border-radius: 8px;
+  padding: 2em;
+}
+input, select, textarea {
+  padding: 0.4em;
+  margin: 0.3em 0;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  width: 100%;
+  box-sizing: border-box;
+}
+label {
+  font-weight: bold;
+}
+button {
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  padding: 0.5em 1.2em;
+  border-radius: 4px;
+  margin: 0.2em 0.3em;
+  cursor: pointer;
+}
+button.danger {
+  background: #e53e3e;
+}
+button.outline {
+  background: none;
+  color: #2b6cb0;
+  border: 1px solid #2b6cb0;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 0.6em 0.5em;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: top;
+  word-break: break-word;
+}
+th {
+  background: #edf2f7;
+}
+tr:hover {
+  background: #f5f2ff;
+}
+a {
+  color: #3182ce;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.activity-note {
+  background: #f6e05e44;
+  padding: 0.5em;
+  margin: 0.3em 0;
+  border-radius: 4px;
+  font-size: 0.97em;
+}
+.flex-row {
+  display: flex;
+  gap: 3em;
+}
+.flex-1 {
+  flex: 1 1 0;
+}
+.mt-2 { margin-top: 2em; }
+.mt-1 { margin-top: 1em; }
+.mb-1 { margin-bottom: 1em; }
+@media (max-width: 900px) {
+  .flex-row {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
